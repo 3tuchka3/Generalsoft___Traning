@@ -1,0 +1,10 @@
+console.log(Library.isArray([]));
+console.log(Library.isDate(new Date));
+console.log(Library.isBoolean(true));
+console.log(Library.isNumber(123.4));
+console.log(Library.isString("welcome"));
+console.log(Library.isFunction(()=>{}));
+console.log(Library.isUndefined(undefined));
+console.log(Library.isNull(null));
+console.log(Library.isNaN(NaN));
+console.log(Library.deepEqual(Object, Object));

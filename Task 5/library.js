@@ -11,11 +11,27 @@ var Library = (function(){
         isNull: obj => typeof obj === 'object',
         isNaN: obj => Object.is(obj, NaN),
         deepEqual: (firstObj, secondObj) => {
-            if (firstObj !== 0 && secondObj !==  0){
-                const ObjOne = Object.firstObj;
-                const Objtwo = Object.secondObj;
+            if (firstObj !== null && secondObj !== null) {
+                const props1 = Object.getOwnPropertyNames(firstObj);
+                const props2 = Object.getOwnPropertyNames(secondObj);
+
+                if (props1.length !== props2.length) {
+                    return false;
+                }
+
+                for (let i = 0; i < props1.length; i++ ) {
+                    let prop = props1[i];
+
+                    if (firstObj[prop] !== secondObj[prop]) {
+                        return false;
+                    }
+                }
+
+                return true;
+            } else {
+                return false
             }
-        }
+        },
 
     }
 
