@@ -69,6 +69,7 @@ body{
     background-color: #f0f0f0;
     padding-left: 15px;
     width: 100%;
+    outline: none;
 }
 .input__field2{
     height: 35px;
@@ -77,6 +78,7 @@ body{
     background-color: #f0f0f0;
     padding-left: 15px;
     width: 100%;    
+    outline: none;
 }
 .input__field3{
     height: 35px;
@@ -85,6 +87,7 @@ body{
     background-color: #f0f0f0;
     padding-left: 15px;
     width: 100%;    
+    outline: none;
 }
 .input__field{
     margin-bottom: 10px;

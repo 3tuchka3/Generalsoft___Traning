@@ -10,17 +10,41 @@
 </head>
 <body>
     <div class="container">
-        <div class="todo_list">
-            <h1>ToDo list - glo.academy</h1>
-            <div class="create_new_todo">
-                <input type="text" class="message" placeholder="Описание">
-                <button class="add">Добавить</button>
+        <div class="todo__title">
+            <p>ToDo List Application</p>
+            <a href="Sign In.html"></a>
+        </div>
+        <div class="todo__welcome">
+            <p>Welcome, {userName} here are your tasks</p>
+        </div>
+        <div class="todo__content">
+            <div class="todo__filters">
+                <input type="text" class="todo__searche" placeholder="Searce by title...">
+                <select name="todo__status">
+                    <option value="s1">Dones</option>
+                    <option value="s2" >In progress</option>
+                </select>
             </div>
-            <div class="wrapper">
-                <ul class="todo"></ul>
+            <div class="todo_list">
+                <h1>ToDo list</h1>
+                <div class="create_new_todo">
+                    <input type="text" class="message" placeholder="Описание">
+                    <button class="add">Добавить</button>
+                </div>
+                <!-- <div class="wrapper">
+                    <ul class="todo"></ul>
+                </div> -->
+            </div>
+            <div class="application__theme">
+                <p>Application__theme</p>
+                <select name="todo__theme">
+                    <option value="s1">Blue</option>
+                    <option value="s2" >Red</option>
+                    <option value="s1">Yellow</option>
+                </select>
             </div>
         </div>
     </div>
-
+<script src="script.js"></script>
 </body>
 </html>
