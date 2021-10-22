@@ -25,16 +25,8 @@ body{
     border: 2px solid hsl(0, 1%, 68%);
     border-radius: 15px;
     width: 80%;
-    height: 200px;
 }
-.sign2{
-    display: flex;
-    justify-content: center;
-    border: 2px solid hsl(0, 1%, 68%);
-    border-radius: 15px;
-    width: 80%;
-    height: 245px;
-}
+
 .sign__inner{
     margin-top: 20px;
     width: 80%;
@@ -62,7 +54,7 @@ body{
     align-items: center;
     width: 100%;
 }
-.input__field1{
+.input__email{
     height: 35px;
     border: 1px solid #cacaca;
     border-radius: 10px;
@@ -71,7 +63,7 @@ body{
     width: 100%;
     outline: none;
 }
-.input__field2{
+.input__pass{
     height: 35px;
     border: 1px solid #cacaca;
     border-radius: 10px;
@@ -80,7 +72,7 @@ body{
     width: 100%;    
     outline: none;
 }
-.input__field3{
+.input__username{
     height: 35px;
     border: 1px solid #cacaca;
     border-radius: 10px;

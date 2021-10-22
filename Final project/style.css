@@ -1,8 +1,18 @@
+
 body {
+    font-family: Lato;
     background-color: #fff;
     font-family: sans-serif;
     -webkit-box-sizing: content-box;
-    box-sizing: content-box; }
+    box-sizing: content-box; 
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    overflow-y: none;
+  }
   
   .container {
     margin: 0 auto;
@@ -11,48 +21,193 @@ body {
     align-items: center;
   }
   
+  .todo__title{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ba0a9;
+  }
+
+  .todo__title p{
+    margin: 0;
+    color: #d0d7e3;
+    font-weight: 600;
+  }
+
+  .todo__title a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    text-decoration: none;
+    color: black;
+    width: 70px;
+    height: 20px;
+    border: 2px solid #424345;
+    border-radius: 30px;
+    background-color: #fff;
+    font-size: 13px;
+  }
+
+  .todo__welcome{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .todo__welcome p{
+    margin: 0;
+    color: #a0a2a1;
+    font-weight: 400;
+  }
+
   .todo__content{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
   }
+  
   .todo__filters{
+    margin-top: 30px;
     width: 200px;
     display: flex;
     flex-direction: column;
   }
-  .todo_list {
-    max-width: 400px;
+
+  .todo__searche{
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 25px;
+    outline: none;
+    border: 1px solid #acacac;
+    border-radius: 7px;
+    background-color: #efeff0;
+  }
+
+  select{
+    font-size: 14px;
+    color: #787578;
+    width: 155px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #acacac;
+    border-radius: 7px;
+    background-color: #efeff0;
+  }
+
+  .option {
+    margin-top: 100px;
+  }
+
+  .application__theme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .application__theme p{
+    margin: 0;  
+    margin-bottom: 10px;
+    color: #a0a2a1;
+    font-weight: 400;
+  }
+/* ----------------------add__todo----------------*/
+  .modal{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 800px;
+    top: 200px;
+    width: 300px;
+    height: 400px;
+    overflow:auto;
+    background-color: #efeff0;
+  }
+
+  /* .modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #000;
+    width: 10%;
+  } */
+
+  .close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight:  bold;
+  } 
+
+  .add__todo{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #myBth {
+    background-color: #9ba0a9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+  }
+  
+  #myBth img{
+    width: 60px;
+    height: 50px;
+  }
+/* ---------------------------------------------- */
+  .todo__list {
+    margin-top: 30px;
+    width: 400px;
+    height: 600px;
     display: block;
     background-color: #b3b3b3;
     padding: 30px;
     border-radius: 10px;
     -webkit-box-shadow: 0 2px 10px 0 #074b83;
-    box-shadow: 0 2px 10px 0 #074b83; }
+    box-shadow: 0 2px 10px 0 #074b83; 
+    overflow: scroll;
+    
+  }
+  .todo__list::-webkit-scrollbar {
+    width: 0;
+  }
+    
   
-  h1 {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 30px; }
+  
   
   .message {
-    width: 376px;
+    width: 250px;
     padding: 10px; }
   
   button {
     margin-top: 10px;
-    width: 400px;
+    width: 275px;
     padding: 10px;
     cursor: pointer; }
   
   .todo {
-    padding-left: 0; }
-    .todo li {
+    padding-left: 0; 
+  }
+
+  .todo li {
       padding: 1em;
-      list-style-type: none; }
+      list-style-type: none; 
+    }
 
   
   input[type=checkbox] {

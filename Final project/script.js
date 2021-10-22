@@ -1,3 +1,28 @@
+var modal = document.getElementById('myModal');
+var bth = document.getElementById('myBth');
+var span = document.getElementsByClassName('close')[0];
+
+bth.onclick = function() {
+    modal.style.display = 'block';
+}
+
+span.onclick = function(){
+    modal.style.display = 'none';
+}    
+
+window.onclick = function(event){
+    if (event.target == modal){
+        modal.style.display = 'none';
+    }
+}
+
+
+
+
+
+
+
+// todo    
 let addMessage = document.querySelector('.message');
 let addButton = document.querySelector('.add');
 let todo = document.querySelector('.todo');
